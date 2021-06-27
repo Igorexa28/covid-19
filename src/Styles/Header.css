@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.headerOfPage {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.containerForImageName {
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.containerForImageName > .nameCont {
+    font-size: 72px;
+    line-height: 84px;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.containerForImageName > .imageCont {
+    margin-left: 60px;
+}
+
+.containerSearch {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.containerSearch > div {
+    width: 580px;
+    height: 80px;
+    margin-right: 52px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.containerSearch > div > input {
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 36px;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+
+.containerSearch > div > svg {
+    top: 5px;
+    right: 5px;
+    position: relative;
+}
+
+@media all and (max-width: 1340px) {
+    .containerSearch > input {
+        margin-right: 43px;
+    }
+}
+
+@media all and (max-width: 1266px) {
+    .headerOfPage {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .containerForImageName {
+        width: 100%;
+    }
+
+    .containerForImageName > .imageCont {
+        margin-left: 40px;
+    }
+
+
+    .containerSearch {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .containerSearch > div {
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media all and (max-width: 668px) {
+    .containerForImageName > .imageCont {
+        margin-left: 20px;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .containerForImageName > .nameCont {
+        font-size: 50px;
+    }
+}
+
+

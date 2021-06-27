@@ -1,0 +1,131 @@
+.modal_styles {
+    top: 50%;
+    left: 50%;
+    height: auto;
+    width: 600px;
+    z-index: 1000;
+    position: fixed;
+    font-size: 28px;
+    border-radius: 25px;
+    transition: .3s all;
+    background-color: #FFF;
+    transform: translate(-50%, -50%);
+}
+
+.headerModal {
+    font-size: 36px;
+    margin-top: -20px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.countryName {
+    color: #000000;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 56px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.infoCont {
+    height: 230px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.infoCont > div {
+    height: 60px;
+}
+
+.cases {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    color: #666666;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    line-height: 28px;
+}
+
+.cases > .statData {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.cases > .statData > div:first-child {
+    padding-top: 5px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.cases > .statData > div:last-child {
+    padding-top: 5px;
+}
+
+.cases > .number {
+    margin-right: 20px;
+}
+
+p {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.flexCont {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.closeCont {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 171px;
+    height: 45px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    padding-top: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #2196F3;
+    transition: all .1s linear; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.closeCont:hover {
+    background-color: #1b83d8;
+}
+
+.overlay_styles {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    transition: all .4s;
+    z-index: 1000;
+    transition: .5s;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+@media all and (max-width: 615px) {
+    .modal_styles {
+        width: 100%;
+    }
+}

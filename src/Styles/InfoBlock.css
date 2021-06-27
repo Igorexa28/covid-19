@@ -1,0 +1,48 @@
+.infoBlock {
+    height: 80px;
+    display: flex;
+    color: #000000;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    align-items: center;
+    align-content: center;
+    flex-flow: row nowrap;
+    transition: box-shadow .1s linear;
+    justify-content: flex-start;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.infoBlock:hover {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+.infoBlock > div {
+    height: 80px;
+    display: flex;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Roboto';
+    line-height: 28px;
+    padding-left: 15px;
+    align-items: center;
+}
+
+.infoBlock > div:first-child {
+    width: 7%;
+    padding-left: 0;
+    justify-content: center;
+    border-right: 1px solid #B2B2B2;
+}
+
+.infoBlock > div:nth-child(2n) {
+    width: 63%;
+    border-right: 1px solid #B2B2B2;
+}
+
+.infoBlock > div:last-child {
+    width: 35%;
+}
+
